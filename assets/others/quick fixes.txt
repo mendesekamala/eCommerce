@@ -1,0 +1,2 @@
+content ya webpage inakua ina overlap kuzidi, div ya menu icon
+issue inakua kwny width ya container la content @media ya phone inabidi lilingane na width ya div ya menu icon

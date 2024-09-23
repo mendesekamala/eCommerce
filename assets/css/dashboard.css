@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 992px) {
+    .menu-btn {
+        display: none;
+    }
+    .dashboard-container {
+        display: flex;
+    }
+    .dashboard-content {
+        flex: 1;
+        padding: 20px;
+        margin-left: 280px;
+    }
+    .dashboard-nav {
+        width: 250px;
+        background-color: #343a40;
+        padding: 15px;
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+    }
+    #close-btn {
+        display: none;
+    }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .dashboard-nav {
+        width: 250px;
+        background-color: #343a40;
+        padding: 15px;
+        color: white;
+        height: 100vh;
+        position: fixed;
+        left: -280px;  /* Hidden by default */
+        transition: left 0.3s ease-in-out;
+    }
+    .dashboard-nav.active {
+        left: 0;  /* Visible when active */
+    }
+    .menu-btn {
+        display: block;
+        background-color: #343a40;
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+        text-align: left;
+    }
+    .menu-btn i {
+        font-size: 24px;
+    }
+    .dashboard-nav .header {
+        display: flex;
+        justify-content: space-between; /* Positions items at the ends */
+        align-items: center; /* Center vertically */
+        width: 100%;
+    }
+    .close-btn {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+}
+
+
+
+/*dashboard links styles*/
+.dashboard-nav h2 {
+    color: #f8f9fa;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dashboard-nav ul {
+    list-style-type: none;
+}
+
+.dashboard-nav ul li {
+    margin-bottom: 20px;
+}
+
+.dashboard-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.dashboard-nav ul li a i {
+    margin-right: 10px;
+}
+
+.dashboard-nav ul li a:hover {
+    color: #007bff;
+}
+

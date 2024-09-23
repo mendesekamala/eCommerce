@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+    gap: 30px;
+}
+
+.product-details img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details {
+    max-width: 600px;
+}
+
+.details h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.btn-add-to-cart {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+.message.success {
+    color: green;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive styles for product details page */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .product-details {
+        flex-direction: column;  /* Stack elements vertically on small screens */
+        align-items: center;
+        gap: 20px;  /* Adjust the gap for smaller screens */
+    }
+
+    .product-details img {
+        width: 100%;  /* Make the image take the full width */
+        max-width: 300px;  /* Add a max-width to prevent too large images */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .details {
+        max-width: 100%;  /* Allow the details section to take full width */
+        text-align: center;  /* Center text for a cleaner mobile look */
+    }
+
+    .details h1 {
+        font-size: 24px;  /* Reduce font size for headings */
+        margin-bottom: 15px;
+    }
+
+    .details p {
+        font-size: 16px;  /* Reduce paragraph font size */
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 20px;  /* Reduce price font size */
+        margin-bottom: 15px;
+    }
+
+    form {
+        flex-direction: column;  /* Stack form elements vertically */
+        gap: 15px;
+    }
+
+    form input[type="number"] {
+        width: 80px;  /* Make input box smaller */
+        font-size: 16px;
+    }
+
+    .btn-add-to-cart {
+        width: 100%;  /* Make the button full width on mobile */
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .message.success {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
